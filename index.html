@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Welcome to The Little Cosmetic Shop, your one-stop destination for all your cosmetic needs.">
+       <title >The Little Cosmetic Shop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+              
+</head>
+
+
+<body>
+    <header class="navbar" role="banner">
+        <ul class="links" id="nav-links">
+            <li><a href="#home" onclick="toggleMenu()">HOME</a></li>
+            <li><a href="#shop" onclick="toggleMenu()">SHOP</a></li>
+            <li><a href="#about" onclick="toggleMenu()">ABOUT</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">CONTACT</a></li>
+        </ul> 
+   
+        <a id="menu" class="menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        </a> 
+    </header> 
+    <section id="login" class="login">
+        <h2>Login</h2>
+        <form id="login-form">
+            <fieldset>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </fieldset>
+            <fieldset>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </fieldset>
+            <button type="submit">Login</button>
+        </form>
+        <p id="login-message"></p>
+    </section>
+
+    <main id="home" role="main">
+    <section class="home">
+        <div class="name"> 
+            <h1 >The Little Cosmetics Shop </h1>
+        </div>
+    
+    
+      <div class="slideshow">  
+        <img src="facemakeup3.jpg" alt="Makeup products" title="We love makeup">
+       </div>
+    </section>
+</main>
+       
+    
+    <br>
+    
+    <section id="shop">
+        <h2><center>OUR PRODUCTS</center></h2>
+        <table>
+            <tr>
+                <td>
+                    <div class="OurProducts">
+                        <img src="foundation.jpg" alt="foundation">
+                        <h5>Foundation</h5>
+                        <button>Add to Cart</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="OurProducts">
+                        <img src="concealer.jpg" alt="concealer">
+                        <h5>Concealer</h5>
+                        <button>Add to Cart</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="OurProducts">
+                        <img src="lipgloss.jpg" alt="lipgloss">
+                        <h5>Lipgloss</h5>
+                        <button>Add to Cart</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="OurProducts">
+                        <img src="eyeliner.jpg" alt="eyeliner">
+                        <h5>Eyeliner</h5>
+                        <button>Add to Cart</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="OurProducts">
+                        <img src="mascara.jpg" alt="mascara">
+                        <h5>Mascara</h5>
+                        <button>Add to Cart</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="OurProducts">
+                        <img src="eyeshadow palette.jpg" alt="eyeshadow palette">
+                        <h5>Eyeshadow Palette</h5>
+                        <button>Add to Cart</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="OurProducts">
+                        <img src="facemask.jpg" alt="facemask">
+                        <h5>Facemask</h5>
+                        <button>Add to Cart</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="OurProducts">
+                        <img src="vitaminc.jpg" alt="vitaminc">
+                        <h5>Vitamin C</h5>
+                        <button>Add to Cart</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="OurProducts">
+                        <img src="sunscreen.jpg" alt="sunscreen">
+                        <h5>Sunscreen</h5>
+                        <button>Add to Cart</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="OurProducts">
+                        <img src="exfoliator.jpg" alt="exfoliator">
+                        <h5>Exfoliator</h5>
+                        <button>Add to Cart</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="OurProducts">
+                        <img src="moisturizer.jpg" alt="moisturizer">
+                        <h5>Moisturizer</h5>
+                        <button>Add to Cart</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="OurProducts">
+                        <img src="micellarwater.jpg" alt="micellar water">
+                        <h5>Micellar Water</h5>
+                        <button>Add to Cart</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section>
+    
+
+    <div class="containerform">
+    <section id="contact-form" class="form" >
+        <form action="/action_page.php" method="post" target="_blank">         
+            <legend>Get emails of our new arrivals</legend> 
+            <fieldset>
+                <p>
+                    <label for="name" class="makeup">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Claire Njeri" autocomplete="on" required>
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <label for="email" class="makeup">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="njeriklara160@gmail.com" autocomplete="on" required>
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <label for="message" class="makeup">Additional message:</label>
+                    <textarea name="message" id="message" cols="30" rows="9" placeholder="Type your additional details" autocomplete="on"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+</div>
+
+   
+    
+
+    <section id="about" class="about">
+     <h2 >About <abbr title="The Little Cosmetics Shop"> TLCS</abbr></h2>
+    <p>Welcome to TLCS, your one-stop destination for all your cosmetic needs! We are a premier cosmetics retailer dedicated to providing high-quality beauty products to our valued customers. At TLCS, we believe that beauty is a personal expression, and we strive to empower individuals to enhance their natural features and embrace their unique style.<br>
+        <br>
+        Our Commitment to Quality <br>
+        We understand the importance of using top-notch cosmetics that not only make you look fabulous but also prioritize your skin's health. That's why we handpick every product in our inventory, collaborating with reputable brands known for their commitment to quality, innovation, and ethical practices. Whether you're looking for skincare essentials, makeup must-haves, or luxurious fragrances, we have carefully curated a diverse collection to cater to every beauty enthusiast. <br>
+        <br>
+        Expert Advice and Personalized Service <br>
+        Our team of knowledgeable beauty consultants is passionate about helping you achieve your desired look. We provide personalized assistance, whether you're a makeup novice or an experienced beauty guru, guiding you through our extensive range of products and recommending the best options tailored to your needs. We take pride in creating a warm and welcoming environment where you can feel comfortable exploring and experimenting with new beauty trends. <br>
+        <br>
+        Stay on Trend <br>
+        Beauty is constantly evolving, and we make it our mission to stay up to date with the latest industry trends and innovations. By regularly refreshing our inventory, we ensure that you have access to the hottest and most sought-after cosmetics on the market. From limited edition collections to cult-favorite products, we strive to be your go-to destination for all things trendy in the world of beauty. <br>
+        <br>
+        Community and Inspiration <br>
+        At TLCS, we believe in fostering a sense of community among our customers. Our store serves as a space where beauty enthusiasts can connect, share their experiences, and inspire one another. We organize workshops, events, and demonstrations to encourage creativity and provide opportunities to learn from industry professionals. We aim to empower individuals to express their unique style and boost their confidence through the power of cosmetics. <br>
+        <br>
+        Shop with Confidence <br>
+        Your satisfaction is our top priority, and we want you to shop with confidence. Our secure online platform and hassle-free return policy ensure a seamless shopping experience. We also offer loyalty programs and exclusive promotions to show our appreciation for your continued support. <br>
+        <br>
+        Join us at TLCS and embark on a journey of self-expression, self-care, and boundless beauty. Discover the transformative power of cosmetics and let your inner radiance shine.
+        </p>
+</section>
+
+<hr>
+
+<section id="contact" class="contact">
+    <h4>Contact Us</h4>
+    <a href="mailto:njeriklara@gmail.com">OUR EMAIL ADDRESS</a>
+</section>
+
+
+<nav role="navigation">
+    <a href="#" >Back to top</a>
+</nav>
+
+
+<script src="idk.js"></script>
+</body>
+
+</html>
+
+  
